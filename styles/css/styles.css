@@ -396,7 +396,6 @@ body .container .payment-method {
 }
 body .container .payment-method .main-wrapper {
   width: 62%;
-  border: 1px solid red;
 }
 body .container .payment-method .main-wrapper .buttons {
   display: flex;
