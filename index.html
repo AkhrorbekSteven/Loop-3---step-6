@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Loop 3 - Step 6</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="styles/css/normalize.css">
+	<link rel="stylesheet" href="styles/css/styles.css">
+</head>
+<body>
+	<div class="container">
+
+		<nav class="sitenav">
+			<ul class="sitenav-list">
+				<li class="sitenav-item"><a href="#" class="sitenav-link">Cart</a></li>
+				<li class="sitenav-item"><a href="#" class="sitenav-link">Customer Information</a></li>
+				<li class="sitenav-item"><a href="#" class="sitenav-link">Shipping Method</a></li>
+				<li class="sitenav-item"><a href="#" class="sitenav-link sitenav-link-active">Payment Method</a></li>
+			</ul>
+		</nav>
+
+		<div class="payment-method">
+
+			<div class="main-wrapper">
+				<div class="payment-information">
+					<h1 class="title">Payment information</h1>
+					<form action="#" class="site-form">
+						<div class="input-box number-box">
+							<label for="card-number" class="label">Card number</label>
+							<input type="text" id="card-number" name="card-number" class="card-number" placeholder="**** **** **** ****">
+						</div>
+						<div class="wrapper">
+							<div class="input-box holder-box">
+								<label for="card-exp" class="label">Card holder</label>
+								<input type="text" id="card-exp" name="card-exp" class="card-exp" placeholder="Michael Jordan">
+							</div>
+							<div class="input-box exp-box">
+								<label for="card-holder" class="label">Exp. date</label>
+								<input type="text" id="card-holder" name="card-holder" class="card-holder" placeholder="03/19">
+							</div>
+							<div class="input-box cvc-box">
+								<label for="card-cvc" class="label">Cvc</label>
+								<input type="text" id="card-cvc" name="card-cvc" class="card-cvc" placeholder="***">
+							</div>
+						</div>
+					</form>
+				</div>
+	
+				<div class="billing-address">
+					<h1 class="title">Billing address</h1>
+					<label class="label">
+						Same as the shipping address
+						<input type="radio" name="billing-address" class="custom-checkbox">
+						<span class="custom-radio"></span>
+					</label>
+					<label class="label">
+						Use a different billing adrress
+						<input type="radio" name="billing-address" class="custom-checkbox">
+						<span class="custom-radio"></span>
+					</label>
+				</div>
+	
+				<div class="buttons">
+					<a href="#" class="return">Return to shipping method</a>
+					<button class="complete-btn">Complete order</button>
+				</div>
+			</div>
+
+			<div class="order-details">
+				<div class="items-details">
+					<div class="img-wrapper">
+						<img src="img/order.jpg" alt="item-img" class="item-img">
+					</div>
+					<p class="item-name">Chocolate bar</p>
+					<p class="item-price">$2.49</p>
+				</div>
+				<div class="price-details">
+					<div class="price-box">
+						<p>Subtotal</p>
+						<p>$4.98</p>
+					</div>
+					<div class="price-box">
+						<p>Shipping</p>
+						<p>$3.00</p>
+					</div>
+					<div class="total-price-box">
+						<p>Total</p>
+						<p>$7.98</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>

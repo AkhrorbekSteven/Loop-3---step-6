@@ -1,0 +1,85 @@
+@import "default";
+@import "nav";
+@import "payment_information";
+@import "billing_address";
+@import "order_details";
+
+body {
+    background-color: $bg;
+    margin: 0;
+    padding: 0;
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .payment-method {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            .main-wrapper {
+                width: 62%;
+                border: 1px solid red;
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 25px;
+        
+                    .return {
+                        font-size: 14px;
+                        color: $blue;
+                        font-weight: 500;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom ease 0.2s;
+        
+                        &:hover {
+                            border-bottom: 1px solid $blue;
+                        }
+                    }
+                    .complete-btn {
+                        @extend %default-button;
+                        background-color: $blue;
+                        color: #fff;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        padding: 10px 20px;
+                        transition: background-color ease 0.2s;
+        
+                        &:hover {
+                            background-color: $blue-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .payment-method {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .order-details {
+        width: 100%;
+    }
+    .main-wrapper {
+        width: 100%;
+        margin-top: 30px;
+        position: relative;
+        align-self: center;
+        display: block;
+    }
+    .wrapper {
+        flex-direction: column;
+
+        .label {
+            margin-top: 10px;
+        }
+    }
+}

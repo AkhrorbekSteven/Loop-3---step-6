@@ -1,0 +1,457 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.order-details, .billing-address, .payment-information {
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.1);
+  color: #000;
+  background-color: #fff;
+}
+
+body .container .payment-method .main-wrapper .buttons .complete-btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.order-details, .billing-address, .payment-information {
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.1);
+  color: #000;
+  background-color: #fff;
+}
+
+body .container .payment-method .main-wrapper .buttons .complete-btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.sitenav {
+  margin-top: 15px;
+}
+.sitenav .sitenav-list {
+  display: flex;
+}
+.sitenav .sitenav-list .sitenav-item {
+  margin-right: 5px;
+  display: inline-block;
+}
+.sitenav .sitenav-list .sitenav-item:not(:last-child)::after {
+  content: " -";
+}
+.sitenav .sitenav-list .sitenav-item .sitenav-link {
+  font-size: 13px;
+  color: #979797;
+}
+.sitenav .sitenav-list .sitenav-item .sitenav-link-active {
+  font-weight: 500;
+  color: #000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.order-details, .billing-address, .payment-information {
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.1);
+  color: #000;
+  background-color: #fff;
+}
+
+body .container .payment-method .main-wrapper .buttons .complete-btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.payment-information {
+  padding: 25px;
+}
+.payment-information .title {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+.payment-information .site-form .number-box {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+.payment-information .site-form .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-information .site-form .wrapper .holder-box {
+  width: 60%;
+}
+.payment-information .site-form .wrapper .exp-box, .payment-information .site-form .wrapper .cvc-box {
+  width: 15%;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #979797;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 2px solid #DEDEDE;
+  border-radius: 5px;
+  padding: 10px;
+  transition: border-color ease 0.1s;
+}
+
+input:focus {
+  border-color: #929292;
+}
+
+input::placeholder {
+  font-weight: 500;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.order-details, .billing-address, .payment-information {
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.1);
+  color: #000;
+  background-color: #fff;
+}
+
+body .container .payment-method .main-wrapper .buttons .complete-btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.billing-address {
+  margin-top: 30px;
+}
+.billing-address .title {
+  font-weight: 500;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+.billing-address .label {
+  display: block;
+  cursor: pointer;
+  padding: 20px 45px;
+  position: relative;
+  font-size: 15px;
+  text-transform: none;
+  color: #1f1c1c;
+  margin: 0;
+}
+.billing-address .label:first-child {
+  border-bottom: 1px solid #DEDEDE;
+}
+.billing-address .label:last-child {
+  border-top: 1px solid #DEDEDE;
+}
+.billing-address .label:hover .custom-radio {
+  background-color: #eee;
+}
+.billing-address .label .custom-radio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #DEDEDE;
+  left: 0;
+  margin: -2px 0 0 15px;
+}
+.billing-address .label .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5F86ED;
+  transition: transform ease 0.1s;
+}
+.billing-address .label .custom-checkbox {
+  display: none;
+}
+.billing-address .label .custom-checkbox:checked ~ .custom-radio::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.order-details, .payment-information, .billing-address {
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.1);
+  color: #000;
+  background-color: #fff;
+}
+
+body .container .payment-method .main-wrapper .buttons .complete-btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.order-details {
+  width: 35%;
+  padding: 25px;
+}
+.order-details .items-details {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.order-details .items-details .img-wrapper {
+  width: fit-content;
+  position: relative;
+  border-radius: 4px;
+  padding: 12px 10px;
+  border: 1px solid #DEDEDE;
+}
+.order-details .items-details .img-wrapper::after {
+  content: "2";
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  text-align: center;
+  line-height: 21px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  width: 21px;
+  height: 21px;
+  background-color: #5F86ED;
+}
+.order-details .items-details .img-wrapper img {
+  width: 35px;
+  display: block;
+}
+.order-details .items-details .item-name {
+  margin-left: 20px;
+  margin-right: auto;
+  font-size: 15px;
+}
+.order-details .items-details .item-price {
+  font-weight: bold;
+}
+.order-details .price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+.order-details .price-box:first-child {
+  margin-top: 15px;
+}
+.order-details .price-box:nth-child(2) {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.order-details .price-box p:nth-child(2) {
+  font-size: 14px;
+}
+.order-details .total-price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.order-details .total-price-box p:nth-child(2) {
+  font-weight: bold;
+}
+
+body {
+  background-color: #FAFAFA;
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .container .payment-method {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+body .container .payment-method .main-wrapper {
+  width: 62%;
+  border: 1px solid red;
+}
+body .container .payment-method .main-wrapper .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+body .container .payment-method .main-wrapper .buttons .return {
+  font-size: 14px;
+  color: #5F86ED;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom ease 0.2s;
+}
+body .container .payment-method .main-wrapper .buttons .return:hover {
+  border-bottom: 1px solid #5F86ED;
+}
+body .container .payment-method .main-wrapper .buttons .complete-btn {
+  background-color: #5F86ED;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  transition: background-color ease 0.2s;
+}
+body .container .payment-method .main-wrapper .buttons .complete-btn:hover {
+  background-color: #466ace;
+}
+
+@media only screen and (max-width: 850px) {
+  .payment-method {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .order-details {
+    width: 100%;
+  }
+
+  .main-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    align-self: center;
+    display: block;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper .label {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

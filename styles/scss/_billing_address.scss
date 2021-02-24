@@ -1,0 +1,60 @@
+@import "default";
+.billing-address {
+    @extend %default-box-styles;
+    margin-top: 30px;
+
+    .title {
+        font-weight: 500;
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+    .label {
+        display: block;
+        cursor: pointer;
+        padding: 20px 45px;
+        position: relative;
+        font-size: 15px;
+        text-transform: none;
+        color: rgb(31, 28, 28);
+        margin: 0;
+
+        &:first-child {
+            border-bottom: 1px solid $light-gray;
+        }
+        &:last-child {
+            border-top: 1px solid $light-gray;
+        }
+        &:hover .custom-radio {
+            background-color: #eee;
+        }
+        .custom-radio {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid $light-gray;
+            left: 0;
+            margin: -2px 0 0 15px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $blue;
+                transition: transform ease 0.1s;
+            }
+        }
+        .custom-checkbox {
+            display: none;
+
+            &:checked ~ .custom-radio::after {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import "default";
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+.payment-information {
+    padding: 25px;
+    @extend %default-box-styles;
+
+    .title {
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+    }
+    .site-form {
+        
+        .number-box {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .holder-box {
+                width: 60%;
+            }
+            .exp-box, .cvc-box {
+                width: 15%;
+            }
+        }
+    }
+}
+.label {
+    text-transform: uppercase;
+    color: $gray;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    border: 2px solid $light-gray;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color ease .1s;
+}
+input:focus {
+    border-color: #929292;
+}
+input::placeholder {
+    font-weight: 500;
+}

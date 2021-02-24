@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+%default-box-styles {
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 5px 13px rgba(0,0,0,.1);
+    color: #000;
+    background-color: #fff;
+}
+%default-button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+$bg: #FAFAFA;
+$gray: #979797;
+$light-gray: #DEDEDE;
+$blue: #5F86ED;
+$blue-hover: #466ace;

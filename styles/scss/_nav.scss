@@ -1,0 +1,26 @@
+@import "default";
+.sitenav {
+    margin-top: 15px;
+
+    .sitenav-list {
+        display: flex;
+
+        .sitenav-item {
+            margin-right: 5px;
+            display: inline-block;
+
+            &:not(:last-child)::after {
+                content: " -";
+            }
+            .sitenav-link {
+                font-size: 13px;
+                color: $gray;
+
+                &-active {
+                    font-weight: 500;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
